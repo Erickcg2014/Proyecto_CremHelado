@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard principal - Imagix</title>
+    <link rel="stylesheet" href="./style_dashboard-principal.css"  />
+  </head>
+  <body>
+    <!-- Menú Superior -->
+    <header class="top-header">
+      <button id="menu-toggle" class="menu-icon">&#9776;</button>
+      <img src="../img/imagix.webp" alt="Imagix Logo" class="logo" />
+      <div class="location-container">
+        <span class="location-icon">📍</span>
+        <div class="dropdown-wrapper">
+          <select id="sede-select" class="sede-dropdown">
+            <option value="">Cargando sedes...</option>
+          </select>
+          <span class="dropdown-icon">▼</span>
+        </div>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Buscar retos, ideas..." class="search-bar" />
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="user-info">
+        <img class="profile-pic" src="../img/pfp.png" alt="Foto de Perfil" />
+        <div class="user-greeting" id="nombre-usuario">Hola👋🏼, Usuario</div>
+      </div>
+    </header>
+
+    <!-- Menú Lateral -->
+    <div class="barra-de-navegacin" id="side-menu">
+      <button id="close-menu" class="close-icon">&times;</button>
+      <div class="logo-container">
+        <img src="../img/imagix.png" alt="Logo Imagix" class="side-logo" />
+      </div>
+      <nav class="menu-items">
+        <a href="./dashboard-principal.html" class="menu-item">
+          <img class="img" src="../img/home.png" alt="Home" />
+          <span>Home</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../Retos/dashboard_retos.html" class="menu-item">
+          <img class="img" src="../img/Retos.png" alt="Retos" />
+          <span>Retos de mi sede</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../RetosPorArea/dashboard_retos_por_area.html" class="menu-item">
+            <img class="img" src="../img/Retos.png" alt="Retos" />
+            <span>Retos por área</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+        <a href="../MisRetosAsignados/retos_asignados.html" class="menu-item">
+          <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+          <span>Mis retos asignados</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../RetosClasificados/retos_clasificados.html" class="menu-item">
+            <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+            <span>Retos clasificados</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+        <a href="../SesionesIdeacion/sesiones_de_ideacion.html" class="menu-item">
+          <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+          <span>Sesiones de ideación</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../Repositorio/repositorio.html" class="menu-item">
+            <img class="img" src="../img/Retos-area.png" alt="Retos de mi sede" />
+            <span>Repositorio</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+        <a href="../Sedes/asociacion-map.html" class="menu-item">
+          <img class="img" src="../img/sedes.png" alt="Sedes" />
+          <span>Sedes</span>
+          <img class="arrow-icon" src="../img/rightarrow.png" />
+        </a>
+        <a href="../MiComite/comite-eval.html" class="menu-item">
+            <img class="img" src="../img/SesionesIdeacion.png" alt="Sesiones de ideación" />
+            <span>Mi comite</span>
+            <img class="arrow-icon" src="../img/rightarrow.png" />
+          </a>
+      </nav>
+      <div class="activity-container">
+        <span class="label">Actividad</span>
+        <span class="label-2">+25%</span>
+      </div>
+      <div class="logout-container">
+        <a href="#" class="logout-item">
+          <img class="frame-2" src="../img/logout.png" alt="Logout" />
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="white-bar-rounded">
+      <span class="quote-text">“El éxito no es casualidad, es el resultado de un esfuerzo constante”</span>
+    </div>
+
+    <div class="white-bar-rounded">
+      <div class="gray-bar-container">
+        <div class="gray-bar">
+          <span class="texto1">27 de Septiembre</span>
+        </div>
+        <div class="gray-bar">
+          <span class="texto1">Innovación</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="white-bar-container">
+      <div class="white-bar-rounded-left">
+        <h2>Retos Activos</h2>
+        <div class="content">
+          <img src="../img/circle.webp" alt="Imagen" class="left-image" />
+          <div class="text-container">
+            <span class="text bold large">Resueltos recientemente</span>
+            <span class="text">24 retos</span>
+            <span class="text bold large">Pendientes por revisión</span>
+            <span class="text">13 retos</span>
+            <span class="text bold large">Atrasados</span>
+            <span class="text">6 retos</span>
+          </div>
+        </div>
+      </div>
+      <div class="white-bar-rounded-half">
+        <div class="electricity">
+          <img class="stats" src="../img/stats.png" />
+          <div class="daily-weekly">
+            <div class="overlap-group">
+              <div class="bg"></div>
+              <div class="current"></div>
+              <div class="weekly">Semanalmente</div>
+              <div class="daily">Diariamente</div>
+            </div>
+          </div>
+          <img class="more" src="../img/go2.png" />
+          <div class="text-wrapper">Tu frecuencia</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="white-bar-rounded">
+      <h2>SEDES ACTIVAS</h2>
+      <div class="map-container">
+        <!-- Aquí se puede agregar la imagen del mapa -->
+        <img src="../img/map.png" alt="Mapa de Sedes Activas" class="map-image" />
+      </div>
+    </div>
+
+    <div class="white-bar-container">
+      <div class="white-bar-left">
+        <h2 class="purpletitle">NOTIFICACIONES</h2>
+        <div class="notifications">
+          <div class="notification-bar">
+            <span class="circle"></span>
+            <span class="text">Mejora tu actividad</span>
+          </div>
+          <div class="notification-bar">
+            <span class="circle"></span>
+            <span class="text">Nueva reunión programada</span>
+          </div>
+          <div class="notification-bar">
+            <span class="circle"></span>
+            <span class="text">Nuevo reto asignado</span>
+          </div>
+          <div class="notification-bar">
+            <span class="circle"></span>
+            <span class="text">Tienes calificaciones pendientes</span>
+          </div>
+          <div class="notification-bar">
+            <span class="circle"></span>
+            <span class="text">Carolina a solicitado tu asesoría</span>
+          </div>
+        </div>
+      </div>
+      <div class="white-bar-right-container">
+        <div class="white-bar-right">
+          <h2>¿Deseas revisar tus retos asignados?</h2>
+          <div class="purple-bars">
+            <div class="purple-bar">
+              <img src="../img/pfp3.png" alt="Imagen 1" class="bar-image" />
+              <span class="bar-text"><strong>Helado nuevo</strong> </span>
+            </div>
+            <div class="purple-bar">
+              <img src="../img/pfp2.png" alt="Imagen 2" class="bar-image" />
+              <span class="bar-text"><strong>Reducir costos</strong></span>
+            </div>
+            <div class="purple-bar">
+              <img src="../img/pfp5.png" alt="Imagen 3" class="bar-image" />
+              <span class="bar-text"><strong>Mejor producción</strong></span>
+            </div>
+          </div>
+        </div>
+        <div class="white-bar-right">
+          <h2>¿Quieres crear una reunión?</h2>
+          <div class="purple-square-bar">
+            <span class="bar-text"><strong>Crear Reunión</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Contenido Principal del Dashboard de la pantalla que vayan a hacer -->
+    <script src="../menu/menu.js"></script>
+    <script src="../menu/usuario-dashboard.js"></script>
+</body>
+</html>
